@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="page2.html">Form</a>   
+        <a href="bullets.html">Rainbow</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+            <a href="#hover">Hover</a>
+                <div class="content">
+                    <a href="">One</a>
+                    <a href="">Two</a>
+                    <a href="">Three</a>
+                </div>
+        </div>
+    </div>
+
+    <h3>Please complete the following:</h3>
+    <form method="GET">
+        <div>
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+        </div>
+        <div> Pizza Toppings:
+            <input type="checkbox" id="cheese"><label for="cheese">Cheese</label>
+            <input type="checkbox" id="pep"><label for="pep">Pep</label>
+            <input type="checkbox" id="ham"><label for="ham">Ham</label>
+            <input type="checkbox" id="bacon"><label for="bacon">Bacon</label>
+            <input type="checkbox" id="sausage"><label for="sausage">Sausage</label>
+        </div>
+        <div> Gender:
+            <input type="radio" id="male"><label for="male">Male</label>
+            <input type="radio" id="female"><label for="female">Female</label>
+        </div>
+        <div> Favorite Sport:
+            <select id="dropdown">
+                <option value="" disabled selected>---</option>
+                <option value="baseball">Baseball</option>
+                <option value="basketball">Basketball</option>
+                <option value="football">Football</option>
+                <option value="hockey">Hockey</option>
+                <option value="waterPolo">Water Polo</option>
+            </select>
+        </div>
+
+        <button>Save</button>
+    </form>
+    <footer>
+        <div class="sidenav">
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.twitter.com">Twitter</a>
+            <a href="https://www.instagram.com">Instagram</a>
+        </div>
+            &copy; Copyright 2019   
+    </footer>  
+</body>
+</html>
