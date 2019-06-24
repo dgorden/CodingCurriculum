@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Week 2, Toy Problem 2</title>
+    <title>Last Name</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,14 +13,14 @@
         <a href="lastname.html">Sort By</a>
         <div class="dropdown">
             <a href="#hover">Hover</a>
-                <div class="content">
-                    <a href="">One</a>
-                    <a href="">Two</a>
-                    <a href="">Three</a>
-                </div>
+            <div class="content">
+                <a href="">One</a>
+                <a href="">Two</a>
+                <a href="">Three</a>
+            </div>
         </div>
     </div>
-
+        
     <div id="sidebar">
         <nav>
             <ul>
@@ -31,19 +31,30 @@
         </nav>
     </div>
 
-    <div class="centered-content">
-        <h1>Headline</h1>
-        <h2>Subhead 1</h2>
-        <h2>Subhead 2</h2>
+    <h1>Please enter your name:</h1>
+    <form>
+        <label for="subject" >Name</label>
+        <input id="name" type="text" name="name">
+
+        <input type="submit" value="Submit" id="submit" onclick="return compare()">
+    </form>
+
+    <div>
+        <ul class="last-name-list">
+
+        </ul>
+    </div>
     <footer>
         <div class="sidenav">
             <a href="https://www.facebook.com">Facebook</a>
             <a href="https://www.twitter.com">Twitter</a>
             <a href="https://www.instagram.com">Instagram</a>
         </div>
-            &copy; Copyright 2019   
+            <span>&copy; Copyright 2019 </span>  
     </footer> 
-    </div>
- 
+    
+
+
+<script src="names.js"></script> 
 </body>
 </html>

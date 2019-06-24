@@ -2,15 +2,16 @@
 <html>
 <head>
         <meta charset="UTF-8">
-        <title>Contact Page</title>
-        <link rel="stylesheet" href="page2.css">
+        <title>Form</title>
+        <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="page2.html">Form</a>   
         <a href="bullets.html">Rainbow</a>
-        <a href="#about">About</a>
+        <a href="lastname.html">Sort By</a>
         <div class="dropdown">
             <a href="#hover">Hover</a>
                 <div class="content">
@@ -21,36 +22,49 @@
         </div>
     </div>
 
-    <h3>Please complete the following:</h3>
-    <form method="GET">
-        <div>
-            <input type="text" id="firstName" placeholder="First Name">
-            <input type="text" id="lastName" placeholder="Last Name">
-        </div>
-        <div> Pizza Toppings:
-            <input type="checkbox" id="cheese"><label for="cheese">Cheese</label>
-            <input type="checkbox" id="pep"><label for="pep">Pep</label>
-            <input type="checkbox" id="ham"><label for="ham">Ham</label>
-            <input type="checkbox" id="bacon"><label for="bacon">Bacon</label>
-            <input type="checkbox" id="sausage"><label for="sausage">Sausage</label>
-        </div>
-        <div> Gender:
-            <input type="radio" id="male"><label for="male">Male</label>
-            <input type="radio" id="female"><label for="female">Female</label>
-        </div>
-        <div> Favorite Sport:
-            <select id="dropdown">
-                <option value="" disabled selected>---</option>
-                <option value="baseball">Baseball</option>
-                <option value="basketball">Basketball</option>
-                <option value="football">Football</option>
-                <option value="hockey">Hockey</option>
-                <option value="waterPolo">Water Polo</option>
-            </select>
-        </div>
+    <div id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="https://redventures.com">Red Ventures</a></li>
+                <li><a href="https://bankrate.com">Bankrate</a></li>
+                <li><a href="https://highereducation.com">Higher Education</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        <button>Save</button>
-    </form>
+    <div class="form">
+        <h3>Please complete the following:</h3>
+        <form method="GET">
+            <div>
+                <input type="text" id="firstName" placeholder="First Name">
+                <input type="text" id="lastName" placeholder="Last Name">
+            </div>
+            <div> Pizza Toppings:
+                <input type="checkbox" id="cheese"><label for="cheese">Cheese</label>
+                <input type="checkbox" id="pep"><label for="pep">Pep</label>
+                <input type="checkbox" id="ham"><label for="ham">Ham</label>
+                <input type="checkbox" id="bacon"><label for="bacon">Bacon</label>
+                <input type="checkbox" id="sausage"><label for="sausage">Sausage</label>
+            </div>
+            <div> Gender:
+                <input type="radio" id="male"><label for="male">Male</label>
+                <input type="radio" id="female"><label for="female">Female</label>
+            </div>
+            <div> Favorite Sport:
+                <select id="dropdown">
+                    <option value="" disabled selected>---</option>
+                    <option value="baseball">Baseball</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="football">Football</option>
+                    <option value="hockey">Hockey</option>
+                    <option value="waterPolo">Water Polo</option>
+                </select>
+            </div>
+        
+            <button>Save</button>
+        </form>
+    </div>
+
     <footer>
         <div class="sidenav">
             <a href="https://www.facebook.com">Facebook</a>
@@ -58,6 +72,7 @@
             <a href="https://www.instagram.com">Instagram</a>
         </div>
             &copy; Copyright 2019   
-    </footer>  
+    </footer>
+
 </body>
 </html>
