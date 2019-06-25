@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Last Name</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="page2.html">Form</a>   
-        <a href="bullets.html">Rainbow</a>
-        <a href="lastname.html">Sort By</a>
-        <div class="dropdown">
-            <a href="#hover">Hover</a>
-            <div class="content">
-                <a href="">One</a>
-                <a href="">Two</a>
-                <a href="">Three</a>
+        <header>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page2.html">Form</a></li>
+                        <li><a href="bullets.html">Rainbow</a></li>
+                        <li><a href="lastname.html">Sort By</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#hover">Hover</a>
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#">One</a></li>
+                                            <li><a href="#">Two</a></li>
+                                            <li><a href="#">Three</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </header>
     </div>
         
-    <div id="sidebar">
+    <div class="sidebar">
         <nav>
-            <ul>
+            <ul class="sidebar--list">
                 <li><a href="https://redventures.com">Red Ventures</a></li>
                 <li><a href="https://bankrate.com">Bankrate</a></li>
                 <li><a href="https://highereducation.com">Higher Education</a></li>
@@ -33,7 +46,7 @@
 
     <h1>Please enter your name:</h1>
     <form>
-        <label for="subject" >Name</label>
+        <label for="name">Name</label>
         <input id="name" type="text" name="name">
 
         <input type="submit" value="Submit" id="submit" onclick="return compare()">
