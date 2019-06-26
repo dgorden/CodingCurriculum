@@ -6,14 +6,19 @@ ul {
     display: inline-block;
 }
 
-.navbar {
-    /* padding-bottom: 50px; */
-    text-align: left;
+.navbar li {
+    padding-bottom: 50px;
+    display: inline-block;
 }
 
-#sidebar {
+.sidebar {
     text-align: left;
+    
     /* float:right; */
+}
+
+.sidebar--list {
+    list-style: none;
 }
 
 .centered-content {
@@ -34,13 +39,13 @@ footer {
     display:inline-block;
 }
 
-.content {
+.content  {
     display: none;
     position: absolute;
     min-width: 200px;
 }
 
-.content a {
+.content li {
     display: block;
 }
 
