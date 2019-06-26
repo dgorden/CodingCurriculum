@@ -1,0 +1,54 @@
+h1 {
+    padding-bottom: 15px;
+}
+
+ul {
+    display: inline-block;
+}
+
+.navbar li {
+    padding-bottom: 50px;
+    display: inline-block;
+}
+
+.sidebar {
+    text-align: left;
+    
+    /* float:right; */
+}
+
+.sidebar--list {
+    list-style: none;
+}
+
+.centered-content {
+    text-align:center;
+}
+
+/* .form {
+    text-align:center;
+    padding-bottom: 30px;
+} */
+
+footer {
+    text-align: center;
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+}
+
+.content  {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+}
+
+.content li {
+    display: block;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
