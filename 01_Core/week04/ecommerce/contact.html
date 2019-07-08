@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    
+    Photos: https://burst.shopify.com/@sarahpflugphoto
+    Photo License: Creative Commons
+    
+-->
+
+<head>
+    <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+
+    <title>WVTCH: Contact Us</title>
+</head>
+
+<body class="contact-body">
+    <header id="contact-header">
+        <nav>
+            <div class="row">
+                <h1 class="logo"> <a href="index.html">WVTCH</a></h1>
+                <ul class="main-nav">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#cart">
+                            <ion-icon name="cart" class="cart"></ion-icon>
+                        </a></li>
+                    <li><a href="contact.html" class="mobile-cart">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="contact-container">
+            <form action="post">
+                <h2>We'd love to hear from you!</h2>
+                <div class="row">
+                    <div class="row">
+                        <label for="name">Name</label>
+                    </div>
+                    <input type="text" class="name" placeholder="" required>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <label for="email">Email</label>
+                    </div>
+                    <input type="email" class="email" placeholder="" required>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <small>Format: 123-456-7890</small>
+                </div>
+
+
+                <div class="row">
+                    <div class="row">
+                        <label for="contact-method">How should we reach out?</label>
+                    </div>
+                    <div class="contact-method">
+                        <ul>
+                            <li><input type="radio" class="contact-email"><label for="contact-email">Email</label></li>
+                            <li><input type="radio" class="contact-email"><label for="contact-phone">Phone</label></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="row">
+                        <label for="discovery-method">How did you hear about us?</label>
+                    </div>
+                    <div class="discovery-method">
+                        <ul>
+                            <li><input type="checkbox" class="conference"><label for="conference">Conference</label>
+                            </li>
+                            <li><input type="checkbox" class="television"><label for="television">Television</label>
+                            </li>
+                            <li><input type="checkbox" class="radio"><label for="radio">Radio</label></li>
+                            <li><input type="checkbox" class="word-of-mouth"><label for="word-of-mouth">Word of
+                                    Mouth</label></li>
+                            <li><input type="checkbox" class="other"><label for="other">Other</label></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="row">
+                        <label for="comments">Comments:</label>
+                    </div>
+                    <textarea name="comments" id="comments" cols="20" rows="5" required></textarea>
+                </div>
+                <div class="row">
+                    <input type="submit" class="btn-ghost">
+                </div>
+            </form>
+        </div>
+    </header>
+
+
+
+
+    <footer class="contact-footer">
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
