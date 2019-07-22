@@ -34,25 +34,40 @@
 
     <form class="search-form" action="">
         <ul>
-            <label for="category">Category:</label>
-            <li class="search"><input type="category" placeholder="Category" id="category" required></li>
-            <label for="name">Name:</label>
-            <li class="search"> <input type="name" placeholder="Name" id="name"required></li>
-            <label for="description">Description:</label>
-            <li class="search"> <input type="description" placeholder="Description" id="description" required></li>
+            
+            <li class="search">
+                <label for="category">Category:</label>
+                <input type="category" placeholder="Category" id="category" required>
+            </li>
+            
+            <li class="search">
+                <label for="name">Name:</label>
+                <input type="name" placeholder="Name" id="name" required>
+            </li>
+            
+            <li class="search">
+                <label for="description">Description:</label>
+                <input type="description" placeholder="Description" id="description" required>
+            </li>
+
             <li>
-                <div class="search-button"><button type="submit">Search</button></div>
+                <div><button type="submit" class="search-button">Search</button></div>
             </li>
         </ul>
 
     </form>
 
     <footer class="search-footer">
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-        </ul>
+        <li><a href="https://www.facebook.com">
+                <ion-icon name="logo-facebook" class="facebook icon"></ion-icon>
+            </a> </li>
+        <li><a href="https://www.instagram.com">
+                <ion-icon name="logo-instagram" class="instagram icon"></ion-icon>
+        </li>
+        <li><a href="https://www.twitter.com">
+                <ion-icon name="logo-twitter" class="twitter icon"></ion-icon>
+            </a> </li>
+        </ul></a>
     </footer>
 </body>
 
