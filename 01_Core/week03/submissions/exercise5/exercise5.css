@@ -1,0 +1,42 @@
+.container {
+    width: 360px;
+    margin: 0 auto;
+    z-index: 0;   
+}
+
+.interior {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 5px solid white;
+    margin-right: -10px;
+}
+
+.div1 {
+    background-color: red;
+}
+
+.div2 {
+    background-color: orange;
+}
+
+.div3 {
+    background-color: yellow;
+}
+
+.div4 {
+    background-color: blue;
+    z-index: 2;
+    position: relative;
+    transform: translate(50%, -50%);
+    margin-left: -10px;
+    margin-right: 2px;
+}
+
+.div5 {
+    background-color: magenta;
+    z-index: 3;
+    position: relative;
+    transform: translate(50%, -50%);
+    margin-left: 2px;
+}
