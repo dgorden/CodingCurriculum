@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--
+    
+    Photos: https://burst.shopify.com/@sarahpflugphoto
+    Photo License: Creative Commons
+    
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>WVTCH: Contact Us</title>
+</head>
+
+<body>
+    <div class="flex-container-main">
+        <div class="contact-body">
+            <header id="contact-header">
+                <nav>
+                    <div class="row navbar">
+                        <h2 class="logo"><a href="index.html">WVTCH</a></h2>
+                        <ul class="main-nav">
+                            <li><a href="products.html" class="nav-link">Products</a></li>
+                            <li><a href="search.html" class="nav-link">Search</a></li>
+                            <li><a href="contact.html" class="nav-link">Contact</a></li>
+                            <li><a href="#cart">
+                                    <ion-icon name="cart" class="cart"></ion-icon>
+                                </a></li>
+                            <li><a href="contact.html" class="mobile-cart">Cart</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <section>
+                <div class="contact-container">
+                    <form class="contact-form" id="contact-form" name="contact-form" method="POST">
+                        <h2 class="contact-header">We'd love to hear from you!</h2>
+                        <div class="row">
+                            <div class="row">
+                                <label for="name">Name</label>
+                            </div>
+                            <input type="text" id="name" class="name" placeholder="" name="name" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="row">
+                                <label for="customer-email">Email</label>
+                            </div>
+                            <input type="email" class="email" placeholder="" name="email" id="customer-email" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="row">
+                                <label for="customer-phone">Phone</label><small> (Format: 123-456-7890)</small>
+                            </div>
+                            <input type="tel" id="customer-phone" name="customer-phone"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="row">
+                                <label class="contact-label">How should we reach out?</label>
+                            </div>
+                            <div class="contact-method" id="contact-method">
+                                <ul>
+                                    <li><input type="radio" class="contact-email" name="contact-method"
+                                            id="contact-email" value="email"><label for="contact-email">Email</label>
+                                    </li>
+                                    <li><input type="radio" class="contact-email" name="contact-method"
+                                            id="contact-phone" value="phone"><label for="contact-phone">Phone</label>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="row">
+                                <label class="discovery-label">How did you hear about us?</label>
+                            </div>
+                            <div class="discovery-method">
+                                <ul>
+                                    <li><input type="checkbox" class="discovery conference" id="conference"
+                                            value="conference" name="conference"><label
+                                            for="conference">Conference</label>
+                                    </li>
+                                    <li><input type="checkbox" class="discovery television" id="television"
+                                            value="television" name="television"><label
+                                            for="television">Television</label>
+                                    </li>
+                                    <li><input type="checkbox" class="discovery radio" id="radio" value="radio"
+                                            name="radio"><label for="radio">Radio</label>
+                                    </li>
+                                    <li><input type="checkbox" class="discovery word-of-mouth" id="word-of-mouth"
+                                            value="word of mouth" name="word-of-mouth"><label for="word-of-mouth">Word
+                                            of
+                                            Mouth</label></li>
+                                    <li><input type="checkbox" class="discovery other" id="other" value="other"
+                                            name="other"><label for="other">Other</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="row">
+                                <label for="comments">Comments:</label>
+                            </div>
+                            <textarea id="comments" cols="20" rows="5" name="Customer_Comments"
+                                required></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="submit" class="btn-ghost" id="submit-form">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <footer class="contact-footer">
+        <ul>
+            <li>
+                <a href="https://facebook.com">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="resources/js/contact.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

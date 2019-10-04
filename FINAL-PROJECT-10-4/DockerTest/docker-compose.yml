@@ -1,0 +1,24 @@
+version: '3.6'
+
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+    - 3306:3306
+    environment:
+      # MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_ROOT_PASSWORD: "${DB_PW}"
+      MYSQL_DATABASE: "${DB_NAME}"
+      # MYSQL_DATABASE: "test_db"
+    volumes:
+    - ./test_volume:/docker-entrypoint-initdb.d:ro
+  app:
+    build:
+      context: ./Go
+    volumes:
+      - "./Go:/go"
+    container_name: golang_app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
