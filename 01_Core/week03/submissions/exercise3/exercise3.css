@@ -1,0 +1,106 @@
+.container {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    display: grid;
+    background-color: blue;
+    z-index: 0;
+    position: relative;
+    border: 10px solid white;
+}
+
+.div1 {
+    width: 20px;
+    height: 220px;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.div2 {
+    width: 220px;
+    height: 20px;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.div3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 2;
+}
+
+.div4 {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+
+
+  .div5 {
+    /* margin: 50px 0; */
+    position: absolute;
+    display: block;
+    color: black;
+    width: 0px;
+    height: 0px;
+    border-right: 13px solid transparent;
+    border-bottom: 10px solid black;
+    border-left: 12px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(35deg);
+    z-index: 4;
+  }
+
+  .div5:before {
+    border-bottom: 10px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    transform: translate(-80%, -60%) rotate(-35deg);
+    z-index: 4;
+  }
+   .div5:after {
+    position: absolute;
+    display: block;
+    color: black;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    border-right: 12px solid transparent;
+    border-bottom: 10px solid black;
+    border-left: 12px solid transparent;
+    transform: translate(-50%, -5%)rotate(-70deg);
+    content: '';
+    z-index: 4; 
+  }
