@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--
+    Photos: https://burst.shopify.com/@sarahpflugphoto
+    Photo License: Creative Commons
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>WVTCH: Products</title>
+</head>
+
+<body onload="getData()">
+    <div class="flex-container-main">
+        <header class="product-header">
+            <nav>
+                <div class="row navbar">
+                    <h2 class="logo"><a href="index.html">WVTCH</a></h2>
+                    <ul class="main-nav">
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="search.html" class="nav-link">Search</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="#cart">
+                                <ion-icon name="cart" class="cart"></ion-icon>
+                            </a></li>
+                        <li><a href="contact.html" class="mobile-cart">Cart</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="product-page-all">
+            <div class="all-products-header">
+                <div>All Products</div>
+                <div class="all-products-underline"></div>
+
+                <div class="row product-select">
+                    <select name="category" id="category" onchange="listProducts">
+                        <option value="all-products" selected>Categories</option>
+                        <option value="marble">Marble</option>
+                        <option value="special">Wood</option>
+                        <option value="classic">Stainless</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container">
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="search-footer">
+        <ul>
+            <li>
+                <a href="https://facebook.com">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="resources/js/products.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+
+</html>
+
+<!-- <div class="card product-card">
+                <div>
+                    <a href="black-white-1.html">
+                        <h3>Classic Leather</h3>
+                        <img src="resources/img/black-white-1.jpg" alt="">
+                        <h4>$299</h4>
+                    </a>
+                    <ul class="product-details">
+                        <li>Stainless steel enclosure</li>
+                        <li>Classic WVTCH face</li>
+                        <li>Premium leather band</li>
+                        <li><a class="btn-full" href="#link1">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div>
+                    <a href="black-white-1.html">
+                        <h3>Classic Leather DVRK</h3>
+                        <img src="resources/img/black-white-3.jpg" alt="">
+                        <h4>$399</h4>
+                    </a>
+
+                    <ul class="product-details">
+                        <li>Stainless steel enclosure</li>
+                        <li>Dark WVTCH face</li>
+                        <li>Premium leather band</li>
+                        <li><a class="btn-full" href="#link1">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div>
+                    <a href="black-white-1.html">
+                        <h3>Marble Leather</h3>
+                        <img src="resources/img/marble-1.jpg" alt="">
+                        <h4>$499</h4>
+                    </a>
+
+                    <ul class="product-details">
+                        <li>Stainless steel enclosure</li>
+                        <li>Marble WVTCH face</li>
+                        <li>Premium leather band</li>
+                        <li><a class="btn-full" href="#link1">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div>
+                    <a href="black-white-1.html">
+                        <h3>Wood Leather</h3>
+                        <img src="resources/img/wood-watch-1.jpg" alt="">
+                        <h4>$299</h4>
+                    </a>
+
+                    <ul class="product-details">
+                        <li>Bamboo enclosure</li>
+                        <li>Classic WVTCH face</li>
+                        <li>Premium leather band</li>
+                        <li><a class="btn-full" href="#link1">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div>
+                    <a href="black-white-1.html">
+                        <h3>Classic Leather</h3>
+                        <img src="resources/img/black-white-1.jpg" alt="">
+                        <h4>$299</h4>
+                    </a>
+
+                    <ul class="product-details">
+                        <li>Stainless steel enclosure</li>
+                        <li>Classic WVTCH face</li>
+                        <li>Premium leather band</li>
+                        <li><a class="btn-full" href="#link1">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div>
+                    <a href="black-white-1.html">
+                        <h3>Classic Leather DVRK</h3>
+                        <img src="resources/img/black-white-3.jpg" alt="">
+                        <h4>$399</h4>
+                    </a>
+
+                    <ul class="product-details">
+                        <li>Stainless steel enclosure</li>
+                        <li>Dark WVTCH face</li>
+                        <li>Premium leather band</li>
+                        <li><a class="btn-full" href="#link1">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div>
+                    <a href="black-white-1.html">
+                        <h3>Marble Leather</h3>
+                        <img src="resources/img/marble-1.jpg" alt="">
+                        <h4>$499</h4>
+                    </a>
+
+                    <ul class="product-details">
+                        <li>Stainless steel enclosure</li>
+                        <li>Marble WVTCH face</li>
+                        <li>Premium leather band</li>
+                        <li><a class="btn-full" href="#link1">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div>
+                    <a href="black-white-1.html">
+                        <h3>Wood Leather</h3>
+                        <img src="resources/img/wood-watch-1.jpg" alt="">
+                        <h4>$299</h4>
+                    </a>
+
+                    <ul class="product-details">
+                        <li>Bamboo enclosure</li>
+                        <li>Classic WVTCH face</li>
+                        <li>Premium leather band</li>
+                        <li><a class="btn-full" href="#link1">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div> -->

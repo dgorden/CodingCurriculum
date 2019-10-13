@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--
+    Photos: https://burst.shopify.com/@sarahpflugphoto
+    Photo License: Creative Commons
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>WVTCH: Search</title>
+</head>
+
+<body class="search-body">
+    <div class="flex-container-main">
+        <header class="product-header">
+            <nav>
+                <div class="row navbar">
+                    <h2 class="logo"><a href="index.html">WVTCH</a></h2>
+                    <ul class="main-nav">
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="search.html" class="nav-link">Search</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="#cart">
+                                <ion-icon name="cart" class="cart"></ion-icon>
+                            </a></li>
+                        <li><a href="contact.html" class="mobile-cart">Cart</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="search-main">
+            <div class="search-form">
+                <form method="GET" id="search-form">
+                    <div class="search-container">
+                        <div class="search-item">
+                            <label class="search-label" for="category">Search</label>
+                            <input class="search-input" type="text" placeholder="Search" id="category" required>
+                        </div>
+                        <div class="search-button search-item">
+                            <input type="submit" id="search-button" class="btn-full">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="sort-container">
+                    <select name="search-sort" id="search-sort">
+                        <option value="sort" selected>Sort By:</option>
+                        <option value="low-to-high">$ - $$$</option>
+                        <option value="high-to-low">$$$ - $</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="container">
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+    <footer class="search-footer">
+        <ul>
+            <li>
+                <a href="https://facebook.com">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="resources/js/search.js"></script>
+</body>
+
+</html>

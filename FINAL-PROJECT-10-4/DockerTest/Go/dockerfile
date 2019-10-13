@@ -1,0 +1,15 @@
+FROM golang:latest
+
+RUN go get "github.com/go-sql-driver/mysql"
+RUN go get "github.com/joho/godotenv"
+RUN go get "github.com/thedevsaddam/govalidator"
+RUN go get "github.com/gorilla/mux"
+RUN mkdir /app
+
+ADD . /app/
+
+WORKDIR /app
+
+RUN go build -o main .
+
+CMD ["/app/main"]
